@@ -1,0 +1,50 @@
+body {
+  background-color: lightgrey;
+}
+
+header{
+  overflow: auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 10vw;
+  /*
+  Removed due to flexbox
+  float: left;
+  */
+  background-color: grey;
+  box-sizing: border-box;
+  padding: 0.5em;
+  padding-right: 1em;
+  flex-shrink: 0;
+  order: 0;
+  }
+
+nav a {
+  background-color: cyan;
+  color: red;
+  padding: 0.25em;
+  margin: 0.5em;
+  text-decoration: none;
+  transition: background-color 0.4s;
+}
+
+nav a:hover {
+  background-color: blue;
+}
+
+section {
+  overflow: auto;
+  background-color: grey;
+  box-sizing: border-box;
+  width: 89vw;
+  padding-left: 1em;
+  padding-right: 1em;
+  float: right;
+}
+
+main {
+  display: flex;
+}

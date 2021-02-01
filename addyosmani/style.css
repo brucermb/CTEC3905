@@ -1,0 +1,35 @@
+nav.hyperlinks {
+  /* Align text to the right for the nav */
+  	text-align: right;
+
+}
+
+nav.hyperlinks a.button {
+  /* Blue background around the button hyperlink */
+	background: #5badf0;
+
+
+nav.hyperlinks a {
+  /* Blue hyperlinks */
+  color: #5badf0;
+}
+
+/* Brain is dead from here on */
+/*examine at own risk */
+
+header.profile {
+  text-align: center;
+}
+
+header.h1 {
+  	font-size: 5em;
+    font-weight: bold;
+}
+
+header.h2 {
+  font-size: 18px;
+}
+
+div.profilemain {
+margin: auto;
+}
