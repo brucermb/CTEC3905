@@ -1,6 +1,10 @@
 function greetMe() {
   console.log("Hello!!");
 }
-function textContent2() {
+
+function stuff() {
   console.log("stuff");
 }
+
+
+myTrigger.addEventListener('click', greetMe);
