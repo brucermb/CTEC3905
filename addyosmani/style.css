@@ -1,4 +1,9 @@
-/* Set default font at body level */
+/* Universal elements */
+/* Not section dependant */
+
+/* Brain is dead from here on */
+/*examine at own risk */
+
 body {
     font-family: Helvetica, sans-serif;
     font-size: 1em;
@@ -7,14 +12,66 @@ body {
 
 }
 
+img {
+  border-radius: 50%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #5badf0;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+
+h1 {
+  	font-size: 3em;
+    font-weight: bold;
+    color: 000000;
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 0.25em;
+}
+
+h2 {
+  font-size: 1.4em;
+  font-weight: normal;
+  color: #bbb;
+  padding: 0;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+  color: #333;
+  font-weight: 100;
+  margin-bottom: 1em;
+}
+
+h4 {
+  font-size: 0.8em;
+  font-weight: 100;
+  text-decoration: line-through;
+  color: lightgrey;
+}
+
+p {
+  line-height: 1.5em;
+  color: black;
+}
+
+
+/* Navigation Content styles */
+
 nav {
-  /* Align text to the right for all nav content */
   	text-align: right;
     padding: 1.5em;
 }
 
 nav a {
-  /* hyperlinks */
   font-size: 0.8em;
   padding: 1.3em;
   text-decoration: none;
@@ -36,22 +93,13 @@ nav a.button {
   border-radius: 4px;
 }
 
-a {
-  text-decoration: none;
-  color: #5badf0;
-}
-
-a:hover{
-  text-decoration: underline;
-}
-
-/* Brain is dead from here on */
-/*examine at own risk */
-
 section {
+  /* SETS MAX WIDTH FOR ALL BELOW NAV */
   max-width: 525px;
   margin: auto;
 }
+
+/* Header Styles */
 
 header {
   text-align: center;
@@ -60,33 +108,23 @@ header {
   padding-bottom: 2em;
 }
 
+
+/* Main content Articles */
+
 article{
-  padding-top: 2em;
-  padding-bottom: 3em;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  display: flex;
 }
 
-img {
-  display: inline-block;
-  border-radius: 50%;
-  margin: 0;
+.article-image {
+    padding-top: 1em;
 }
 
-h1 {
-  	font-size: 3em;
-    font-weight: bold;
-    color: 000000;
-    margin: 0;
-    padding-bottom: 0;
-    padding-top: 0.25em;
+.flex-content{
+  padding-left: 2em;
 }
 
-h2 {
-  font-size: 1.4em;
-  font-weight: normal;
-  color: #bbb;
-  padding: 0;
-  margin-bottom: 0.5em;
-}
 
 .text-red {
   font-size: 1em;
@@ -96,40 +134,11 @@ h2 {
   display: inline;
 }
 
-h3 {
-  font-size: 1.25em;
-  color: #333;
-  font-weight: 100;
-  margin-bottom: 1em;
-}
+/* Footer styles */
 
 footer {
   text-align: left;
   border-top: 1px solid #eee;
   padding-top: 2em;
   padding-bottom: 1em;
-}
-
-h4 {
-  font-size: 0.8em;
-  font-weight: 100;
-  text-decoration: line-through;
-  color: lightgrey;
-}
-
-td{
-  vertical-align: top;
-  text-align: left;
-  padding-bottom: 2em;
-}
-
-th{
-  vertical-align: top;
-  text-align: left;
-  padding-right: 2em;
-}
-
-p{
-  line-height: 1.5em;
-  color: black;
 }

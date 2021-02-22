@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lab 05</title>
+  </head>
+
+  <body>
+
+    <header>
+
+      <h1> Dingus Direct </h1>
+      <section id="search">
+        <input placeholder="&#128269; search" id="myQuery" aria-label="search" type="search">
+        <button id="searchButton">search</button>
+      </section>
+
+    </header>
+
+    <main>
+
+      <section>
+        <form id="login">
+          <h2>Sign in</h2>
+          <label for="myUser">Username: </label>
+          <input id="myUser" name="username" placeholder="enter your username" required>
+          <label for="myPassword">Password: </label>
+          <input id="myPassword" type="password" name="password" placeholder="enter your password" minlength="8" required>
+          <label for="myConfirmation">Confirm password: </label>
+          <input id="myConfirmation" type="password" placeholder="confirm password" required>
+          <input type="submit" value="login">
+        </form>
+      </section>
+
+      <section id="nameinput">
+        <h2>Name</h2>
+        <label for="myName">Enter Your Name:</label> <span> <input id="myName">
+      </section>
+
+      <section>
+        <h2>Age</h2>
+        <label for="myAge">Enter your age: </label>
+        <input id="myAge" type="number" min="1" max="150">
+      </section>
+
+      <section class="relative">
+        <h2>Ranges</h2>
+        <label for="myHeight">Element height: </label>
+        <input id="myHeight" type="range" value="50" step="25">
+        <div id="heightTarget"></div>
+      </section>
+
+      <section id="colours">
+        <h2>Colours</h2>
+        <label for="myBG">Background: </label>
+        <input id="myBG" type="color" value="#ffffff"><br>
+        <label for="myFG">Foreground: </label>
+        <input id="myFG" type="color" value="#000000">
+      </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
